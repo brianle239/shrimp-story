@@ -9,21 +9,95 @@ export async function defineAssets() {
     // backgrounds
     Assets.add({
         alias: "background_main_menu",
-        src: "https://firebasestorage.googleapis.com/v0/b/pixi-vn.appspot.com/o/public%2Fmain-menu.webp?alt=media",
+        src: "/shrimp-story/Main_Screen.png",
     });
     Assets.add({
-        alias: "bg01-hallway",
-        src: "https://firebasestorage.googleapis.com/v0/b/pixi-vn.appspot.com/o/public%2Fbreakdown%2Fbg01-hallway.webp?alt=media",
+        alias: "bg01-basement",
+        src: "/shrimp-story/Basement.png",
     });
     Assets.add({
-        alias: "bg02-dorm",
-        src: "https://firebasestorage.googleapis.com/v0/b/pixi-vn.appspot.com/o/public%2Fbreakdown%2Fbg02-dorm.webp?alt=media",
+        alias: "bg02-bedroom",
+        src: "/shrimp-story/Bedroom.png",
     });
-    // female character 01
     Assets.add({
-        alias: "fm01-body",
-        src: "https://firebasestorage.googleapis.com/v0/b/pixi-vn.appspot.com/o/public%2Fbreakdown%2Ffm01%2Ffm01-body.webp?alt=media",
+        alias: "bg03-campus",
+        src: "/shrimp-story/Campus.png",
     });
+    Assets.add({
+        alias: "bg04-busstop",
+        src: "/shrimp-story/Busstop.png",
+    });
+    Assets.add({
+        alias: "bg05-karaoke",
+        src: "/shrimp-story/Karaoke.png",
+    });
+    // Brian Basement
+    Assets.add({
+        alias: "brian1",
+        src: "/shrimp-story/brian1.png",
+    });
+    Assets.add({
+        alias: "brian2",
+        src: "/shrimp-story/brian2.png",
+    });
+    // Brian Cool
+    Assets.add({
+        alias: "brianCool1",
+        src: "/shrimp-story/coolBrian1.png",
+    });
+    Assets.add({
+        alias: "brianCool2",
+        src: "/shrimp-story/coolBrian2.png",
+    });
+    Assets.add({
+        alias: "brianCool3",
+        src: "/shrimp-story/coolBrian3.png",
+    });
+    // Brian Baseball
+    Assets.add({
+        alias: "brianBase1",
+        src: "/shrimp-story/baseballBrian1.png",
+    });
+    Assets.add({
+        alias: "brianBase2",
+        src: "/shrimp-story/baseballBrian2.png",
+    });
+    Assets.add({
+        alias: "brianBase3",
+        src: "/shrimp-story/baseballBrian3.png",
+    });
+    // Girl Brian
+    Assets.add({
+        alias: "brianGirl1",
+        src: "/shrimp-story/girlBrian1.png",
+    });
+    Assets.add({
+        alias: "brianGirl2",
+        src: "/shrimp-story/girlBrian2.png",
+    });
+    // Rain Brian
+    Assets.add({
+        alias: "brianRain1",
+        src: "/shrimp-story/rainBrian1.png",
+    });
+    Assets.add({
+        alias: "brianRain2",
+        src: "/shrimp-story/rainBrian2.png",
+    });
+    Assets.add({
+        alias: "brianRain3",
+        src: "/shrimp-story/rainBrian3.png",
+    });
+    // Teacher Brian
+    Assets.add({
+        alias: "brianTeacher1",
+        src: "/shrimp-story/teacherBrian1.png",
+    });
+    Assets.add({
+        alias: "brianTeacher2",
+        src: "/shrimp-story/teacherBrian2.png",
+    });
+
     Assets.add({
         alias: "fm01-eyes-grin",
         src: "https://firebasestorage.googleapis.com/v0/b/pixi-vn.appspot.com/o/public%2Fbreakdown%2Ffm01%2Ffm01-eyes-grin.webp?alt=media",

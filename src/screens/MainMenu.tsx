@@ -22,11 +22,31 @@ export default function MainMenu() {
     const { data: lastSave = null, isLoading } = useQueryLastSave();
     const gameProps = useGameProps();
     const { uiTransition: t, navigate, notify } = gameProps;
+    const canvasWidth = canvas.canvasWidth;
+    const canvasHeight = canvas.canvasHeight;
 
     useEffect(() => {
         editHideInterface(false);
         let bg = new ImageSprite({}, "background_main_menu");
-        bg.load();
+        bg.load().then(() => {
+            // Get original image size
+            const originalWidth = bg.texture.width;
+            const originalHeight = bg.texture.height;
+        
+            // Calculate scale factors to fit the screen
+            const scaleX = canvasWidth / originalWidth;
+            const scaleY = canvasHeight / originalHeight;
+            
+            // Choose the larger or smaller scale to ensure full coverage
+            const scale = Math.max(scaleX, scaleY); // Use `Math.min(scaleX, scaleY)` if you want it to fit inside without cropping
+        
+            // Apply scaling
+            bg.scale.set(scale, scale);
+        
+            // Center the image
+            bg.x = (canvasWidth - bg.width) / 2;
+            bg.y = (canvasHeight - bg.height) / 2;
+        });
         let layer = canvas.getLayer(CANVAS_UI_LAYER_NAME);
         if (layer) {
             layer.addChild(bg);
